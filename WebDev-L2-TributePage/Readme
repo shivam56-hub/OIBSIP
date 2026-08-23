@@ -26,5 +26,5 @@ A responsive tribute page built using pure HTML, CSS, and lightweight JavaScript
 ├── index.html        # Main HTML structure
 ├── style.css         # Custom styles and layouts
 ├── script.js         # JavaScript interactivity
-├── assets/           # Images and media assets
+├── assets          # Images and media assets
 └── README.md         # Project documentation
