@@ -1,0 +1,104 @@
+:root {
+  --bg-color: #f4f6f9;
+  --in--color: #222;
+  --text-color: #333;
+  --button-color: #FF0000;
+  --equal-button-color: #6dee6d;
+  --card-bg: #ffffff;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.basic-regular {
+  font-family: "Basic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.5;
+  padding: 20px;
+}
+.main {
+    max-width: 900vw;
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--card-bg);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 1.2rem;
+}
+.main h2 {
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+.main h2::after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    bottom: -7px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--button-color);
+}
+.input-div input{
+    margin-top: 1.8rem;
+    width: 90%;
+    height: 50px;
+    border-radius: 1.3rem;
+    padding: 6px;
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+.input-div input:hover {
+    border-color: var(--in--color);
+}
+.input-div input:focus {
+    border-color: var(--in--color);
+    box-shadow: 0 0 5px var(--in--color);
+}
+.input-div input:active {
+    transform: scale(0.98);
+}
+.buttons {
+    display: grid;
+    gap: 6px;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+button {
+    padding: 1.6rem;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.equalBtn {
+    background-color: var(--equal-button-color);
+}
+.operatorBtn,
+.dotBtn {
+    color: var(--button-color);
+    font-size: 1rem;
+    font-weight: 700;
+}
