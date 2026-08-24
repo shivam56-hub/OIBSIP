@@ -1,0 +1,22 @@
+# Simple Web Calculator
+
+A clean, responsive, and lightweight web-based calculator built using vanilla HTML, CSS, and JavaScript. Perform basic arithmetic operations directly in your browser with zero dependencies.
+
+---
+
+## Features
+
+* **Basic Operations:** Addition, subtraction, multiplication, and division.
+* **Responsive Design:** Fits seamlessly on desktop, tablet, and mobile screens.
+* **Keyboard Support:** Inputs work via both UI clicks and keyboard keys.
+* **Clear & Reset Functions:** Easily clear inputs (`C`) or clear entry (`CE`).
+* **Zero Dependencies:** Pure HTML5, CSS3, and modern JavaScript.
+
+---
+
+## File Structure
+
+```text
+├── index.html      # Main HTML layout
+├── style.css       # Layout design and styling
+└── script.js       # Calculator logic and event handling
