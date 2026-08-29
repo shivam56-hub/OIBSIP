@@ -9,7 +9,7 @@ A clean, responsive, and lightweight web-based calculator built using vanilla HT
 * **Basic Operations:** Addition, subtraction, multiplication, and division.
 * **Responsive Design:** Fits seamlessly on desktop, tablet, and mobile screens.
 * **Keyboard Support:** Inputs work via both UI clicks and keyboard keys.
-* **Clear & Reset Functions:** Easily clear inputs (`C`) or clear entry (`CE`).
+* **Clear & Reset Functions:** Easily clear inputs (`DE`) or clear entry (`AC`).
 * **Zero Dependencies:** Pure HTML5, CSS3, and modern JavaScript.
 
 ---
@@ -20,3 +20,13 @@ A clean, responsive, and lightweight web-based calculator built using vanilla HT
 ├── index.html      # Main HTML layout
 ├── style.css       # Layout design and styling
 └── script.js       # Calculator logic and event handling
+
+
+
+## Technologies Used
+
+HTML5: Semantic structure for the display screen and button grid.
+
+CSS3: Flexbox/CSS Grid layout, custom color palette, and hover state animations.
+
+JavaScript (ES6): State handling, DOM manipulation, and math calculation algorithms.
