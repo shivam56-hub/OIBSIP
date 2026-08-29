@@ -1,0 +1,80 @@
+# 📝 Todo List Application
+
+A simple and responsive Todo List application built using HTML, CSS, and JavaScript.
+
+This project allows users to create, edit, complete, filter, and delete tasks. Tasks are stored in the browser's Local Storage, so the data remains available even after refreshing the page.
+
+## 🚀 Features
+
+- ➕ Add new tasks
+- ⌨️ Add tasks using the Enter key
+- ✏️ Edit and update existing tasks
+- ✅ Mark tasks as completed
+- 🔄 Change completed tasks back to pending
+- 🔍 Filter tasks:
+     - All
+     - Pending
+     - Completed
+- ❌ Delete individual tasks
+- 🗑️ Clear all tasks
+- 💾 Persistent data using Local Storage
+- ⚠️ Delete confirmation
+- 📱 Responsive design
+- 🎨 Clean and modern UI
+- 🔔 Empty-state message when no tasks are available
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- DOM Manipulation
+- Local Storage
+- Event Delegation
+
+## 📂 Project Structure
+
+```text
+Todo-List/
+│
+├── index.html
+├── style.css
+├── script.js
+└── Images/
+    └── icon.png
+    
+⚙️ How to Run
+Clone the repository:
+git clone YOUR_REPOSITORY_URL
+Open the project folder.
+Open index.html in your browser.
+
+Or use the Live Server extension in VS Code.
+
+💡 What I Learned
+
+While building this project, I practiced:
+
+DOM manipulation
+JavaScript event handling
+Event delegation
+Arrays and objects
+Array methods
+CRUD operations
+Local Storage
+Dynamic HTML elements
+Conditional rendering
+Filtering data
+Basic responsive CSS
+
+
+👨‍💻 Author
+
+Shivam Kumar
+
+GitHub: shivam56-hub
+
+⭐ If you like this project, consider giving it a star!
+
+
+

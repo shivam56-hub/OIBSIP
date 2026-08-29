@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h2>To Do list <img src="./Images/icon.png" alt="icon"></h2>
+        <div class="task-input">
+            <input type="text" placeholder="New Task + Enter" id="input">
+            <button class="addBtn" id="addBtn">Add</button>
+        </div>
+        
+        <div class="controls">
+            <div class="filters">
+                <span class="active" id="all">All</span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+            </div>
+            <button class="clear-btn" id="clearBtn">Clear All</button>
+        </div>
+        <hr>
+        <ul class="task-box">
+            
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
