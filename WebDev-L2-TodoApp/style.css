@@ -1,3 +1,16 @@
+:root {
+  --bg-color: linear-gradient(135deg, #141e30, #243b55);
+  --main-bg: #ffffff;
+  --selection: #243b55;
+  --selection-text: #ffffff;
+  --text: #ffffff;
+  --main-heading: #002765;
+  --btn-bg: #002765;
+  --input: #edeef0;
+  --span-color: #333;
+  --task-com: #4a4;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,23 +20,22 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(135deg, #141e30, #243b55);
+  background: var(--bg-color);
 }
 ::selection {
-  color: #fff;
-  background: #243b55;
+  color: var(--selection-text);
+  background: var(--selection);
 }
 
 .main {
   width: 550px;
-  background: #fff;
+  background: var(--main-bg);
   margin: 8rem auto;
   border-radius: 8px;
   padding: 1.5rem;
-  /* padding: 2rem 0 3rem; */
 }
 .main h2 {
-  color: #002765;
+  color: var(--main-heading);
   display: flex;
   align-items: center;
   margin-bottom: 20px !important;
@@ -38,7 +50,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #edeef0;
+  background: var(--input);
   border: none;
   border-radius: 30px;
   padding-left: 20px;
@@ -48,7 +60,7 @@ body {
 .task-input input {
   flex: 1;
   outline: none;
-  background: #edeef0;
+  background: var(--input);
   border: none !important;
   padding: 1rem;
   font-size: 18px;
@@ -58,7 +70,7 @@ body {
   padding: 1.3rem 2.5rem;
   border-radius: 25px;
   color: white;
-  background: #002765;
+  background: var(--btn-bg);
   border: none;
   cursor: pointer;
 }
@@ -73,7 +85,7 @@ body {
 .filters span {
   margin: 5px 20px;
   font-size: 18px;
-  color: #333;
+  color: var(--span-color);
   cursor: pointer;
 }
 .filters span:first-child {
@@ -81,15 +93,15 @@ body {
 }
 
 .filters span.active {
-  color: #fff;
-  background: #003478;
+  color: var(--text);
+  background: var(--btn-bg);
   padding: 8px 15px;
   border-radius: 15px;
 }
 .clear-btn {
-  color: white;
+  color: var(--text);
   padding: 0.6rem 1.2rem;
-  background: #002765;
+  background: var(--btn-bg);
   border: none;
   border-radius: 10px;
 }
@@ -99,7 +111,6 @@ hr {
 
 ul li {
   display: flex;
-  /* align-self: center; */
   gap: 10px;
   list-style: none;
   font-size: 18px;
@@ -114,14 +125,14 @@ ul li span {
   width: 40px;
   height: 40px;
   font-size: 22px;
-  color: #333;
+  color: var(--span-color);
   line-height: 42px;
   text-align: center;
   border-radius: 50%;
   cursor: pointer;
 }
 ul li span:hover {
-  background: #edeef0;
+  background: var(--input);
 }
 .edit-btn {
   position: absolute;
@@ -132,7 +143,7 @@ ul li span:hover {
   padding: 0.3rem 1.3rem;
 }
 .edit-btn:hover {
-  background: #002765;
+  background: var(--btn-bg);
   border-radius: 2rem;
 }
 .checked {
@@ -148,11 +159,11 @@ ul li span:hover {
 }
 
 .task.completed {
-  color: #4a4;
+  color: var(--task-com);
 }
 
 .task.pending {
-  color: #4a4;
+  color: var(--task-com);
 }
 
 

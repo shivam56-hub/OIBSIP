@@ -1,0 +1,211 @@
+:root {
+  --body-bg: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+  --bg-color: rgba(15, 23, 42, 0.65);
+  --text-color: #ffffff;
+  --input-label: #cbd5e1;
+  --input-bg: rgba(255, 255, 255, 0.05);
+  --input-focus: #818cf8;
+  --btn-bg: #6366f1;
+  --btn-hover: #4f46e5;
+  --card-bg: rgba(255, 255, 255, 0.07);
+  --badge-bg: rgba(99, 102, 241, 0.15);
+  --badge-color: #818cf8;
+  --avatar-bg: linear-gradient(135deg, #818cf8, #c084fc);
+  --status-text-color: #94a3b8;
+  --logout-btn: #ef4444;
+  --logout-hover: #dc2626;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI", Roboto, sans-serif;
+  background: var(--body-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 420px;
+  background: var(--bg-color);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.register-form,
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.register-form h2,
+.login-form h2 {
+  color: var(--text-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.input-group label {
+  color: var(--input-label);
+  font-size: 0.875rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: var(--input-bg);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: var(--text-color);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input-group input:focus {
+  border-color: var(--input-focus);
+}
+
+.submit-btn,
+.btn {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background: var(--btn-bg);
+  color: var(--text-color);
+  border: none;
+  text-align: left;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: var(--btn-hover);
+}
+p {
+  color: var(--text-color);
+  text-align: center;
+}
+p a {
+  text-decoration: none;
+  color: var(--btn-hover);
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  padding: 32px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.badge {
+  background: var(--badge-bg);
+  color: var(--badge-color);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--avatar-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 16px rgba(99, 102, 241, 0.25);
+}
+
+.avatar-text {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+.welcome-text {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.status-text {
+  font-size: 0.9rem;
+  color: var(--status-text-color);
+  line-height: 1.5;
+}
+
+.btn-logout {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  background: var(--logout-btn);
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-logout:hover {
+  background: var(--logout-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(239, 68, 68, 0.35);
+}
+
+.btn-logout:active {
+  transform: translateY(0);
+}
